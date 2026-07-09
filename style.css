@@ -1,0 +1,224 @@
+/* ==========================
+   إعدادات عامة
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:#f4f6f9;
+}
+
+/* ==========================
+   التخطيط العام
+========================== */
+
+.dashboard-container{
+    display:grid;
+    grid-template-columns:250px 1fr;
+    min-height:100vh;
+}
+
+/* ==========================
+   Sidebar
+========================== */
+
+.sidebar{
+    background:linear-gradient(180deg,#2c3e50,#34495e);
+    color:white;
+    padding:20px;
+}
+
+.profile{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    display:block;
+    margin:0 auto 15px;
+    border:3px solid white;
+}
+
+.sidebar h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar li{
+    margin-bottom:15px;
+}
+
+.sidebar a{
+    text-decoration:none;
+    color:#ecf0f1;
+    display:block;
+    padding:12px;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.sidebar a i{
+    margin-left:10px;
+}
+
+.sidebar a:hover,
+.sidebar a.active{
+    background:#34495e;
+    color:#3498db;
+    padding-right:18px;
+}
+
+/* ==========================
+   المحتوى الرئيسي
+========================== */
+
+.main-content{
+    padding:30px;
+}
+
+header{
+    margin-bottom:20px;
+}
+
+.welcome{
+    background:#dff9fb;
+    color:#2c3e50;
+    padding:15px;
+    border-radius:8px;
+    margin-bottom:20px;
+    font-weight:bold;
+}
+
+#date{
+    margin-bottom:25px;
+    color:#666;
+}
+
+/* ==========================
+   الكروت
+========================== */
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 3px 8px rgba(0,0,0,.1);
+    text-align:center;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 12px 25px rgba(0,0,0,.18);
+}
+
+.card h3{
+    color:#7f8c8d;
+    margin-bottom:10px;
+}
+
+.card p{
+    font-size:28px;
+    font-weight:bold;
+    color:#2c3e50;
+}
+
+/* ==========================
+   الجدول
+========================== */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    border-radius:8px;
+    overflow:hidden;
+    box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+
+table th{
+    background:#3498db;
+    color:white;
+    padding:15px;
+}
+
+table td{
+    padding:15px;
+    text-align:center;
+    border-bottom:1px solid #eee;
+}
+
+table tr:hover{
+    background:#eef7ff;
+}
+
+/* ==========================
+   النموذج
+========================== */
+
+form{
+    background:white;
+    padding:25px;
+    max-width:500px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+
+form label{
+    display:block;
+    margin:15px 0 8px;
+    font-weight:bold;
+}
+
+form input{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    transition:.3s;
+}
+
+form input:focus{
+    border-color:#3498db;
+    outline:none;
+}
+
+button{
+    margin-top:20px;
+    background:#3498db;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:6px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#2980b9;
+    transform:scale(1.05);
+}
+
+/* ==========================
+   Footer
+========================== */
+
+footer{
+    margin-top:40px;
+    text-align:center;
+    color:#777;
+    font-size:14px;
+}
